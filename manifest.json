@@ -1,0 +1,16 @@
+{
+
+  "manifest_version": 2,
+  "name": "smileFireFox",
+  "version": "1.0",
+
+  "description": "redirects to https://smile.amazon.com, when accessing amazon.com",
+
+  "content_scripts": [
+    {
+      "matches": ["*://www.amazon.com/*"],
+      "js": ["smile.js"]
+    }
+  ]
+
+}
